@@ -1,6 +1,46 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.configuration,shipment_qty_decimal:"
+msgid "Shipment Qty Decimal"
+msgstr "Decimal de Qt. per albarà"
+
+msgctxt "field:stock.configuration.company,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:stock.configuration.company,create_date:"
+msgid "Create Date"
+msgstr "Data de creació"
+
+msgctxt "field:stock.configuration.company,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:stock.configuration.company,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:stock.configuration.company,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:stock.configuration.company,shipment_qty_decimal:"
+msgid "Shipment Qty Decimal"
+msgstr "Decimal de Qt. en albarà"
+
+msgctxt "field:stock.configuration.company,write_date:"
+msgid "Write Date"
+msgstr "Data modificación"
+
+msgctxt "field:stock.configuration.company,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "help:stock.configuration,shipment_qty_decimal:"
+msgid "Show qty with or without decimals"
+msgstr "Mostra la Qt. amb o sense decimals"
 
 msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Carrier"
@@ -33,3 +73,7 @@ msgstr "Adreça enviament"
 msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Document relacionat"
+
+msgctxt "model:stock.configuration.company,name:"
+msgid "Stock Configuration per Company"
+msgstr "Configuració d'alabarans per companyia"

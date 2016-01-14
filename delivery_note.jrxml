@@ -8,6 +8,7 @@
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="TAXES_DS" class="java.lang.Object"/>
+	<parameter name="shipment_qty_decimal" class="java.lang.Boolean"/>
 	<queryString language="xPath">
 		<![CDATA[]]>
 	</queryString>
@@ -47,9 +48,6 @@
 	<field name="company-footer" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/footer-footer]]></fieldDescription>
 	</field>
-	<field name="company-shipment_qty" class="java.lang.Boolean">
-		<fieldDescription><![CDATA[/data/record/company-company/shipment_qty-shipment_qty]]></fieldDescription>
-	</field>
 	<field name="reference-reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
 	</field>
@@ -65,7 +63,7 @@
 	<field name="rec_name-rec_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
-	<field name="quantity-quantity" class="java.lang.String">
+	<field name="quantity-quantity" class="java.lang.Double">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/quantity-quantity]]></fieldDescription>
 	</field>
 	<field name="full_name-full_name" class="java.lang.String">
@@ -263,7 +261,15 @@
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{quantity-quantity} ? $F{company-shipment_qty} ? (int)Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : '0']]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{quantity-quantity} != null && $F{quantity-quantity} != ""
+?
+    $P{shipment_qty_decimal} == true
+    ?
+        String.format("%.2f", $F{quantity-quantity})
+    :
+        String.valueOf($F{quantity-quantity}).split("\\.")[0]
+:
+    ""]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00;-#,##0.00">
 				<reportElement x="13" y="2" width="75" height="12" uuid="4e492720-da5d-4781-812e-3e1a520042a9"/>
