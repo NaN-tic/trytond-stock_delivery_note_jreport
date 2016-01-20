@@ -20,7 +20,7 @@ class DeliveryNote(JasperReport):
             'shipment_qty_decimal': config.shipment_qty_decimal
             }
         if 'parameters' in data:
-            data['parameters'] += parameters
+            data['parameters'].update(parameters)
         else:
             data['parameters'] = parameters
         return super(DeliveryNote, cls).execute(ids, data)

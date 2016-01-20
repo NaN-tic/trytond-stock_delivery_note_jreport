@@ -75,11 +75,11 @@
 	<field name="customer-code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/customer-customer/code-code]]></fieldDescription>
 	</field>
-	<field name="full_address_lang-full_address_lang" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/customer-customer/addresses-addresses/full_address_lang-full_address_lang]]></fieldDescription>
+	<field name="customer_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer/addresses/full_address]]></fieldDescription>
 	</field>
-	<field name="full_address_lang-full_address_lang2" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/full_address_lang-full_address_lang]]></fieldDescription>
+	<field name="delivery_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/delivery_address/full_address]]></fieldDescription>
 	</field>
 	<field name="effective_date-effective_date" class="java.util.Date">
 		<fieldDescription><![CDATA[/data/record/effective_date-effective_date]]></fieldDescription>
@@ -139,7 +139,7 @@
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{full_address_lang-full_address_lang}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{customer_full_address}]]></textFieldExpression>
 				</textField>
 				<line>
 					<reportElement x="264" y="74" width="274" height="1" uuid="5a6145c7-3562-46a5-841a-3a42154afb8f"/>
@@ -149,7 +149,7 @@
 					<textElement>
 						<font size="9" isBold="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{full_address_lang-full_address_lang2}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{delivery_full_address}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="7" width="250" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
