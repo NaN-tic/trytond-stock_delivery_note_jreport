@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="delivery_note" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4b91cc8-3c40-4b72-9bba-39145c6ee555">
 	<property name="ireport.zoom" value="1.3310000000000008"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="29"/>
 	<property name="TRYTON_RELATIONS" value="[&apos;outgoing_moves&apos;]"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
@@ -121,15 +121,15 @@
 					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="177" y="141" width="148" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
+					<reportElement x="93" y="141" width="148" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Description")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="113" y="141" width="50" height="12" uuid="c5bb9964-4123-4488-8055-4f9f8bd504a1"/>
-					<textElement textAlignment="Left">
+					<reportElement x="459" y="141" width="70" height="12" uuid="c5bb9964-4123-4488-8055-4f9f8bd504a1"/>
+					<textElement textAlignment="Right">
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Quantity")]]></textFieldExpression>
@@ -250,15 +250,15 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="177" y="2" width="361" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
+				<reportElement x="93" y="2" width="361" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{rec_name-rec_name}]]></textFieldExpression>
 			</textField>
-			<textField pattern="" isBlankWhenNull="false">
-				<reportElement x="113" y="2" width="50" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
-				<textElement textAlignment="Left">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement x="459" y="2" width="70" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
+				<textElement textAlignment="Right">
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{quantity-quantity} != null && $F{quantity-quantity} != ""
@@ -271,7 +271,7 @@
 :
     ""]]></textFieldExpression>
 			</textField>
-			<textField pattern="#,##0.00;-#,##0.00">
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00">
 				<reportElement x="13" y="2" width="75" height="12" uuid="4e492720-da5d-4781-812e-3e1a520042a9"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
