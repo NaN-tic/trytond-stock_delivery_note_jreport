@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="delivery_note" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4b91cc8-3c40-4b72-9bba-39145c6ee555">
 	<property name="ireport.zoom" value="1.3310000000000008"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="29"/>
+	<property name="ireport.y" value="0"/>
 	<property name="TRYTON_RELATIONS" value="[&apos;outgoing_moves&apos;]"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
@@ -104,6 +104,10 @@
 	</field>
 	<field name="delivery_address-comment_shipment" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
+	</field>
+	<field name="packages" class="java.lang.Integer">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity
+]]></fieldDescription>
 	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
@@ -213,6 +217,13 @@
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Carrier")+": "+$F{carrier-rec_name}]]></textFieldExpression>
 				</textField>
+				<textField>
+					<reportElement x="408" y="140" width="50" height="12" uuid="8bc45c9c-3288-4795-b820-7952ef7683ae"/>
+					<textElement textAlignment="Right">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L}, "Boxes")]]></textFieldExpression>
+				</textField>
 			</band>
 		</groupHeader>
 		<groupFooter>
@@ -250,7 +261,7 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="93" y="2" width="361" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
+				<reportElement x="93" y="2" width="304" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -277,6 +288,13 @@
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{code-code}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="407" y="2" width="50" height="12" uuid="6390578a-e0aa-4581-b1a9-309089786cdb"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{packages}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

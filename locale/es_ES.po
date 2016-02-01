@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -73,6 +73,10 @@ msgstr "Dirección de envío"
 msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Documento relacionado"
+
+msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgid "Boxes"
+msgstr "Cajas"
 
 msgctxt "model:stock.configuration.company,name:"
 msgid "Stock Configuration per Company"
