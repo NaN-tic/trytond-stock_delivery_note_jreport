@@ -42,6 +42,50 @@ msgctxt "help:stock.configuration,shipment_qty_decimal:"
 msgid "Show qty with or without decimals"
 msgstr "Mostrar la Cant. con o sin decimales"
 
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Boxes"
+msgstr "Cajas"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Carrier"
+msgstr "Transportista"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Customer Code"
+msgstr "Código cliente"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Delivery Note"
+msgstr "Nota de envío"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Shipment Address"
+msgstr "Dirección de envío"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
+msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgid "Boxes"
+msgstr "Cajas"
+
 msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Carrier"
 msgstr "Mensajero"
@@ -74,9 +118,9 @@ msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Documento relacionado"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
-msgid "Boxes"
-msgstr "Cajas"
+msgctxt "model:ir.action,name:report_shipment_out_delivery_note"
+msgid "Delivery Note"
+msgstr "Nota de envío"
 
 msgctxt "model:stock.configuration.company,name:"
 msgid "Stock Configuration per Company"
