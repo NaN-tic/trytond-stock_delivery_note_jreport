@@ -17,7 +17,7 @@ class DeliveryNote(JasperReport):
         Config = pool.get('stock.configuration')
         config = Config(1)
         parameters = {
-            'shipment_qty_decimal': config.shipment_qty_decimal
+            'shipment_qty_decimal': config.shipment_qty_decimal or False
             }
         if 'parameters' in data:
             data['parameters'].update(parameters)
