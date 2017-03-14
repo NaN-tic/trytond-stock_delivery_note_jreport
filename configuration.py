@@ -1,14 +1,15 @@
-# The COPYRIGHT file at the top level of this repository contains the full
-# copyright notices and license terms.
+# This file is part stock_delivery_note_jreport module for Tryton.
+# The COPYRIGHT file at the top level of this repository contains
+# the full copyright notices and license terms.
 from trytond.model import Model, ModelSQL, fields
 from trytond.pool import Pool, PoolMeta
 from trytond.transaction import Transaction
 
 __all_ = ['Configuration', 'StockConfigurationCompany']
-__metaclass__ = PoolMeta
 
 
 class Configuration:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.configuration'
 
     shipment_qty_decimal = fields.Function(fields.Boolean(

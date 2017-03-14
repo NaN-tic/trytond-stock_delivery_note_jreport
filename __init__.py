@@ -2,15 +2,15 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.pool import Pool
-from .configuration import *
-from .shipment import *
+from . import configuration
+from . import shipment
 
 
 def register():
     Pool.register(
-        Configuration,
-        StockConfigurationCompany,
+        configuration.Configuration,
+        configuration.StockConfigurationCompany,
         module='stock_delivery_note_jreport', type_='model'),
     Pool.register(
-        DeliveryNote,
+        shipment.DeliveryNote,
         module='stock_delivery_note_jreport', type_='report')
