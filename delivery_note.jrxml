@@ -51,16 +51,16 @@
 	<field name="reference-reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
 	</field>
-	<field name="shipment-code" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/code-code]]></fieldDescription>
+	<field name="shipment-number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/number-number]]></fieldDescription>
 	</field>
 	<field name="state-state" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/state-state]]></fieldDescription>
 	</field>
-	<field name="code-code" class="java.lang.String">
+	<field name="product-code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/code-code]]></fieldDescription>
 	</field>
-	<field name="rec_name-rec_name" class="java.lang.String">
+	<field name="product-rec_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
 	<field name="quantity-quantity" class="java.lang.Double">
@@ -157,12 +157,12 @@
 				</textField>
 				<textField>
 					<reportElement x="10" y="7" width="250" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
-						<printWhenExpression><![CDATA[$F{shipment-code} != '']]></printWhenExpression>
+						<printWhenExpression><![CDATA[$F{shipment-number} != '']]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Left">
 						<font size="11" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{shipment-code} ? tr($V{L},"Delivery Note")+" Nº "+$F{shipment-code} : tr($V{L},"Delivery Note")]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{shipment-number} ? tr($V{L},"Delivery Note")+" Nº "+$F{shipment-number} : tr($V{L},"Delivery Note")]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="24" width="250" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a">
@@ -265,7 +265,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{rec_name-rec_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
 				<reportElement x="459" y="2" width="70" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
@@ -287,7 +287,7 @@
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{code-code}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{product-code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
 				<reportElement x="407" y="2" width="50" height="12" uuid="6390578a-e0aa-4581-b1a9-309089786cdb"/>
