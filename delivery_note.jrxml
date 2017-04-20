@@ -106,8 +106,7 @@
 		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
 	</field>
 	<field name="packages" class="java.lang.Integer">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity
-]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity]]></fieldDescription>
 	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
@@ -125,7 +124,7 @@
 					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="93" y="141" width="148" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
+					<reportElement x="13" y="141" width="148" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
@@ -193,13 +192,6 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="13" y="141" width="75" height="12" uuid="87281f64-2851-4132-b8fb-7c17da692ec1"/>
-					<textElement textAlignment="Left">
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Code")]]></textFieldExpression>
-				</textField>
-				<textField>
 					<reportElement x="10" y="49" width="250" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
 						<printWhenExpression><![CDATA[$F{customer-code}!= '']]></printWhenExpression>
 					</reportElement>
@@ -261,7 +253,7 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="93" y="2" width="304" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
+				<reportElement x="13" y="2" width="394" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -281,13 +273,6 @@
         String.valueOf($F{quantity-quantity}).split("\\.")[0]
 :
     ""]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00">
-				<reportElement x="13" y="2" width="75" height="12" uuid="4e492720-da5d-4781-812e-3e1a520042a9"/>
-				<textElement textAlignment="Left">
-					<font size="9"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{product-code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
 				<reportElement x="407" y="2" width="50" height="12" uuid="6390578a-e0aa-4581-b1a9-309089786cdb"/>
