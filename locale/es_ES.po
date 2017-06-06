@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -118,9 +118,57 @@ msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Documento relacionado"
 
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Carrier"
+msgstr "Transportista"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Customer Code"
+msgstr "Código cliente"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "From"
+msgstr "Desde"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Picking List"
+msgstr "Lista recogida"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Qty."
+msgstr "Ctda."
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Reference"
+msgstr "Referencia"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Source document"
+msgstr "Orígen"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "To"
+msgstr "A"
+
 msgctxt "model:ir.action,name:report_shipment_out_delivery_note"
 msgid "Delivery Note"
 msgstr "Nota de envío"
+
+msgctxt "model:ir.action,name:report_shipment_out_picking_list"
+msgid "Picking List"
+msgstr "Lista recogida"
 
 msgctxt "model:stock.configuration.company,name:"
 msgid "Stock Configuration per Company"
