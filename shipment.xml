@@ -3,11 +3,21 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
+        <!-- delivery note -->
         <record model="ir.action.report" id="stock.report_shipment_out_delivery_note">
             <field name="name">Delivery Note</field>
             <field name="model">stock.shipment.out</field>
             <field name="report_name">stock.shipment.out.delivery_note</field>
             <field name="report">stock_delivery_note_jreport/delivery_note.jrxml</field>
+            <field name="extension">pdf</field>
+        </record>
+
+        <!-- picking list -->
+        <record model="ir.action.report" id="stock.report_shipment_out_picking_list">
+            <field name="name">Picking List</field>
+            <field name="model">stock.shipment.out</field>
+            <field name="report_name">stock.shipment.out.picking_list</field>
+            <field name="report">stock_delivery_note_jreport/picking_list.jrxml</field>
             <field name="extension">pdf</field>
         </record>
     </data>

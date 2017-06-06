@@ -13,4 +13,5 @@ def register():
         module='stock_delivery_note_jreport', type_='model'),
     Pool.register(
         shipment.DeliveryNote,
+        shipment.PickingList,
         module='stock_delivery_note_jreport', type_='report')

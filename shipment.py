@@ -5,7 +5,7 @@ from trytond.pool import Pool
 from trytond.pool import PoolMeta
 from trytond.modules.jasper_reports.jasper import JasperReport
 
-__all__ = ['DeliveryNote']
+__all__ = ['DeliveryNote', 'PickingList']
 
 
 class DeliveryNote(JasperReport):
@@ -26,3 +26,23 @@ class DeliveryNote(JasperReport):
         else:
             data['parameters'] = parameters
         return super(DeliveryNote, cls).execute(ids, data)
+
+
+class PickingList(JasperReport):
+    __metaclass__ = PoolMeta
+    __name__ = 'stock.shipment.out.picking_list'
+
+    @classmethod
+    def execute(cls, ids, data):
+        pool = Pool()
+        Config = pool.get('stock.configuration')
+
+        config = Config(1)
+        parameters = {
+            'shipment_qty_decimal': config.shipment_qty_decimal or False
+            }
+        if 'parameters' in data:
+            data['parameters'].update(parameters)
+        else:
+            data['parameters'] = parameters
+        return super(PickingList, cls).execute(ids, data)
