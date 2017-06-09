@@ -122,12 +122,13 @@
 		<groupExpression><![CDATA[$F{id}]]></groupExpression>
 		<groupHeader>
 			<band height="122">
-				<textField>
-					<reportElement x="10" y="23" width="400" height="13" uuid="818b8de6-78fa-4268-81ba-ed157ace3e65"/>
-					<textElement>
-						<font size="9" isBold="true"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="318" y="22" width="219" height="62" uuid="818b8de6-78fa-4268-81ba-ed157ace3e65"/>
+					<textElement markup="styled">
+						<font size="9" isBold="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
+					<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica'>"+$F{full_name-full_name}.replaceAll("&","&amp;")+"</style>\n"+
+$F{delivery_full_address}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="234" y="106" width="115" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
@@ -144,7 +145,7 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Qty.")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="7" width="400" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
+					<reportElement x="10" y="7" width="300" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
 						<printWhenExpression><![CDATA[$F{shipment-number} != '']]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Left">
@@ -153,7 +154,7 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Picking List")+ " " + ($F{shipment-number} ? $F{shipment-number} : '')]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="36" width="400" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a"/>
+					<reportElement x="10" y="23" width="300" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
@@ -163,7 +164,7 @@
 					<reportElement x="10" y="119" width="530" height="1" uuid="d9826cb5-0b1f-44c4-a7a9-b7f0a171713b"/>
 				</line>
 				<textField>
-					<reportElement x="10" y="61" width="400" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
+					<reportElement x="10" y="48" width="300" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
 						<printWhenExpression><![CDATA[$F{origins-origins}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -172,7 +173,7 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="73" width="400" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
+					<reportElement x="10" y="60" width="300" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
 						<printWhenExpression><![CDATA[$F{customer-code}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -181,7 +182,7 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Customer Code")+": "+$F{customer-code}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="85" width="400" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
+					<reportElement x="10" y="72" width="300" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
 						<printWhenExpression><![CDATA[$F{carrier-rec_name}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -190,7 +191,7 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Carrier")+": "+$F{carrier-rec_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="49" width="400" height="12" uuid="f0247fb7-06a8-47e6-ab8d-f76c3fd006a3"/>
+					<reportElement x="10" y="36" width="300" height="12" uuid="f0247fb7-06a8-47e6-ab8d-f76c3fd006a3"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
