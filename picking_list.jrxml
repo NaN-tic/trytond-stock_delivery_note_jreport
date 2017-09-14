@@ -128,7 +128,7 @@
 						<font size="9" isBold="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica'>"+$F{full_name-full_name}.replaceAll("&","&amp;")+"</style>\n"+
-$F{delivery_full_address}]]></textFieldExpression>
+$F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="234" y="106" width="115" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
