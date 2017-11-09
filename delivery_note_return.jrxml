@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="picking_list" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4b91cc8-3c40-4b72-9bba-39145c6ee555">
-	<property name="ireport.zoom" value="1.331000000000001"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="delivery_note" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4b91cc8-3c40-4b72-9bba-39145c6ee555">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-	<property name="TRYTON_RELATIONS" value="[&apos;inventory_moves&apos;]"/>
+	<property name="TRYTON_RELATIONS" value="[&apos;incoming_moves&apos;]"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
 	</parameter>
@@ -57,19 +57,13 @@
 		<fieldDescription><![CDATA[/data/record/state-state]]></fieldDescription>
 	</field>
 	<field name="product-code" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/inventory_moves-inventory_moves/product-product/code-code]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/incoming_moves-incoming_moves/product-product/code-code]]></fieldDescription>
 	</field>
 	<field name="product-rec_name" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/inventory_moves-inventory_moves/product-product/rec_name-rec_name]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/incoming_moves-incoming_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
 	<field name="quantity-quantity" class="java.lang.Double">
-		<fieldDescription><![CDATA[/data/record/inventory_moves-inventory_moves/quantity-quantity]]></fieldDescription>
-	</field>
-	<field name="from_location-rec_name" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/inventory_moves-inventory_moves/from_location-from_location/rec_name-rec_name]]></fieldDescription>
-	</field>
-	<field name="to_location-rec_name" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/inventory_moves-inventory_moves/to_location-to_location/rec_name-rec_name]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/incoming_moves-incoming_moves/quantity-quantity]]></fieldDescription>
 	</field>
 	<field name="full_name-full_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/customer-customer/full_name-full_name]]></fieldDescription>
@@ -86,9 +80,6 @@
 	<field name="delivery_full_address" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address/full_address]]></fieldDescription>
 	</field>
-	<field name="planned_date-planned_date" class="java.util.Date">
-		<fieldDescription><![CDATA[/data/record/planned_date-planned_date]]></fieldDescription>
-	</field>
 	<field name="effective_date-effective_date" class="java.util.Date">
 		<fieldDescription><![CDATA[/data/record/effective_date-effective_date]]></fieldDescription>
 	</field>
@@ -101,9 +92,6 @@
 	<field name="origin_info-origin_info" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/origin_info-origin_info]]></fieldDescription>
 	</field>
-	<field name="carrier-rec_name" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/carrier-carrier/rec_name-rec_name]]></fieldDescription>
-	</field>
 	<field name="comment-comment" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/comment-comment]]></fieldDescription>
 	</field>
@@ -113,9 +101,6 @@
 	<field name="delivery_address-comment_shipment" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
 	</field>
-	<field name="packages" class="java.lang.Integer">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity]]></fieldDescription>
-	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
 		<initialValueExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></initialValueExpression>
@@ -123,102 +108,81 @@
 	<group name="Shipment" isStartNewPage="true" isResetPageNumber="true">
 		<groupExpression><![CDATA[$F{id}]]></groupExpression>
 		<groupHeader>
-			<band height="122">
-				<textField isStretchWithOverflow="true">
-					<reportElement x="318" y="22" width="219" height="62" uuid="818b8de6-78fa-4268-81ba-ed157ace3e65"/>
-					<textElement markup="styled">
-						<font size="9" isBold="false"/>
+			<band height="155">
+				<textField>
+					<reportElement x="264" y="8" width="274" height="15" uuid="818b8de6-78fa-4268-81ba-ed157ace3e65"/>
+					<textElement>
+						<font size="9" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA["<style isBold='true' pdfFontName='Helvetica'>"+$F{full_name-full_name}.replaceAll("&","&amp;")+"</style>\n"+
-$F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="234" y="106" width="115" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
+					<reportElement x="13" y="141" width="148" height="12" uuid="7981c58b-c489-4dd5-8793-69babdb09cba"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Description")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="497" y="106" width="40" height="12" uuid="c5bb9964-4123-4488-8055-4f9f8bd504a1"/>
+					<reportElement x="459" y="141" width="70" height="12" uuid="c5bb9964-4123-4488-8055-4f9f8bd504a1"/>
 					<textElement textAlignment="Right">
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Qty.")]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Quantity")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="7" width="300" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
+					<reportElement x="264" y="23" width="274" height="51" uuid="ae1498e6-e3b0-40f1-a04e-5d40e6c6b1ea"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customer_full_address}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="264" y="74" width="274" height="1" uuid="5a6145c7-3562-46a5-841a-3a42154afb8f"/>
+				</line>
+				<textField>
+					<reportElement x="264" y="90" width="274" height="46" uuid="bbb305a8-7b69-4591-bc6f-381b6b8e79eb"/>
+					<textElement>
+						<font size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{delivery_full_address}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="7" width="250" height="15" forecolor="#010101" uuid="adb3b84f-217e-48ff-bf30-4fb816aca7fe">
 						<printWhenExpression><![CDATA[$F{shipment-number} != '']]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Left">
 						<font size="11" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Picking List")+ " " + ($F{shipment-number} ? $F{shipment-number} : '')]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Delivery Note Return")+ ($F{shipment-number} ? " "+$F{shipment-number} : '')]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="23" width="300" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a"/>
+					<reportElement x="10" y="24" width="250" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a">
+						<printWhenExpression><![CDATA[$F{effective_date-effective_date} != null]]></printWhenExpression>
+					</reportElement>
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Planned Date")+": "+ ($F{planned_date-planned_date} ? new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{planned_date-planned_date}) : '')]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Date")+": "+new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{effective_date-effective_date})]]></textFieldExpression>
 				</textField>
 				<line>
-					<reportElement x="10" y="119" width="530" height="1" uuid="d9826cb5-0b1f-44c4-a7a9-b7f0a171713b"/>
+					<reportElement x="10" y="154" width="530" height="1" uuid="d9826cb5-0b1f-44c4-a7a9-b7f0a171713b"/>
 				</line>
 				<textField>
-					<reportElement x="10" y="59" width="300" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
+					<reportElement x="264" y="78" width="274" height="15" uuid="6ab01374-5f6a-433d-878c-a3e5a01ea5ca"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Shipment Address")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="37" width="250" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
 						<printWhenExpression><![CDATA[$F{origins-origins}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="10" y="71" width="300" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
-						<printWhenExpression><![CDATA[$F{customer-code}!= '']]></printWhenExpression>
-					</reportElement>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Customer Code")+": "+$F{customer-code}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="10" y="83" width="300" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
-						<printWhenExpression><![CDATA[$F{carrier-rec_name}!= '']]></printWhenExpression>
-					</reportElement>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Carrier")+": "+$F{carrier-rec_name}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="10" y="47" width="300" height="12" uuid="f0247fb7-06a8-47e6-ab8d-f76c3fd006a3"/>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Reference")+": "+ ($F{reference-reference} ? $F{reference-reference} : '')]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="10" y="106" width="110" height="12" uuid="a804d180-0ddb-4838-b966-a3b6cf422274"/>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"From")]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="123" y="106" width="110" height="12" uuid="f8f2ed4d-1067-437b-93a7-abb09b805937"/>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"To")]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="10" y="35" width="300" height="12" uuid="a4c9bdba-1a34-4c7b-9ab9-3e3aecfb0d44"/>
-					<textElement>
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Effective Date")+": "+ ($F{effective_date-effective_date} ? new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{effective_date-effective_date}) : '')]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -257,14 +221,14 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="234" y="2" width="260" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
+				<reportElement x="13" y="2" width="446" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
-				<reportElement x="497" y="2" width="40" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
+				<reportElement x="459" y="2" width="70" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
 				<textElement textAlignment="Right">
 					<font size="9"/>
 				</textElement>
@@ -277,14 +241,6 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
         String.valueOf($F{quantity-quantity}).split("\\.")[0]
 :
     ""]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true">
-				<reportElement x="10" y="2" width="110" height="12" uuid="ad2789a1-67b3-451d-9776-438b0111b224"/>
-				<textFieldExpression><![CDATA[$F{from_location-rec_name}]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true">
-				<reportElement x="123" y="2" width="110" height="12" uuid="c72b8739-5d52-49cd-bf37-41dc9071ed56"/>
-				<textFieldExpression><![CDATA[$F{to_location-rec_name}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
