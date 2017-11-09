@@ -118,6 +118,42 @@ msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Documento relacionado"
 
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Boxes"
+msgstr "Cajas"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Carrier"
+msgstr "Mensajero"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Customer Code"
+msgstr "Código cliente"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Delivery Note Return"
+msgstr "Albarán devolución"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Shipment Address"
+msgstr "Dirección de envío"
+
+msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
 msgctxt "jasper:stock.shipment.out.picking_list:"
 msgid "Carrier"
 msgstr "Transportista"
@@ -173,6 +209,10 @@ msgstr "A"
 msgctxt "model:ir.action,name:report_shipment_out_delivery_note"
 msgid "Delivery Note"
 msgstr "Nota de envío"
+
+msgctxt "model:ir.action,name:report_shipment_out_delivery_note_return"
+msgid "Delivery Note Return"
+msgstr "Nota de envío devolución"
 
 msgctxt "model:ir.action,name:report_shipment_out_picking_list"
 msgid "Picking List"

@@ -7,7 +7,6 @@
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="TAXES_DS" class="java.lang.Object"/>
 	<parameter name="shipment_qty_decimal" class="java.lang.Boolean"/>
 	<queryString language="xPath">
 		<![CDATA[]]>
@@ -161,7 +160,7 @@
 					<textElement textAlignment="Left">
 						<font size="11" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Picking List")+ ($F{shipment-number} ? " "+$F{shipment-number} : '')]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Delivery Note")+ ($F{shipment-number} ? " "+$F{shipment-number} : '')]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="24" width="250" height="12" uuid="64c521c0-47ad-4ef0-86bf-9c2b33fa2f8a">
