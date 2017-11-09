@@ -87,6 +87,9 @@
 	<field name="delivery_full_address" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address/full_address]]></fieldDescription>
 	</field>
+	<field name="planned_date-planned_date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/planned_date-planned_date]]></fieldDescription>
+	</field>
 	<field name="effective_date-effective_date" class="java.util.Date">
 		<fieldDescription><![CDATA[/data/record/effective_date-effective_date]]></fieldDescription>
 	</field>
@@ -158,13 +161,13 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Date")+": "+ ($F{effective_date-effective_date} ? new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{effective_date-effective_date}) : '')]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Planned Date")+": "+ ($F{planned_date-planned_date} ? new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{planned_date-planned_date}) : '')]]></textFieldExpression>
 				</textField>
 				<line>
 					<reportElement x="10" y="119" width="530" height="1" uuid="d9826cb5-0b1f-44c4-a7a9-b7f0a171713b"/>
 				</line>
 				<textField>
-					<reportElement x="10" y="48" width="300" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
+					<reportElement x="10" y="59" width="300" height="12" uuid="62ba4bae-9148-4c20-b78f-1aed1d2dc134">
 						<printWhenExpression><![CDATA[$F{origins-origins}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -173,7 +176,7 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="60" width="300" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
+					<reportElement x="10" y="71" width="300" height="12" uuid="958a21fc-e6fe-475f-a183-72ddf25c2232">
 						<printWhenExpression><![CDATA[$F{customer-code}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -182,7 +185,7 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 					<textFieldExpression><![CDATA[tr($V{L},"Customer Code")+": "+$F{customer-code}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="72" width="300" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
+					<reportElement x="10" y="83" width="300" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
 						<printWhenExpression><![CDATA[$F{carrier-rec_name}!= '']]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -191,7 +194,7 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 					<textFieldExpression><![CDATA[tr($V{L},"Carrier")+": "+$F{carrier-rec_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="10" y="36" width="300" height="12" uuid="f0247fb7-06a8-47e6-ab8d-f76c3fd006a3"/>
+					<reportElement x="10" y="47" width="300" height="12" uuid="f0247fb7-06a8-47e6-ab8d-f76c3fd006a3"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
@@ -210,6 +213,13 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"To")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="35" width="300" height="12" uuid="a4c9bdba-1a34-4c7b-9ab9-3e3aecfb0d44"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Effective Date")+": "+ ($F{effective_date-effective_date} ? new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{effective_date-effective_date}) : '')]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>

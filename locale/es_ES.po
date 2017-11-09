@@ -20,7 +20,7 @@ msgstr "Usuario de creación"
 
 msgctxt "field:stock.configuration.company,id:"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "field:stock.configuration.company,rec_name:"
 msgid "Name"
@@ -135,12 +135,20 @@ msgid "Description"
 msgstr "Descripción"
 
 msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Effective Date"
+msgstr "Fecha efectiva"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
 msgid "From"
 msgstr "Desde"
 
 msgctxt "jasper:stock.shipment.out.picking_list:"
 msgid "Picking List"
 msgstr "Lista recogida"
+
+msgctxt "jasper:stock.shipment.out.picking_list:"
+msgid "Planned Date"
+msgstr "Fecha estimada"
 
 msgctxt "jasper:stock.shipment.out.picking_list:"
 msgid "Quantity"
