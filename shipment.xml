@@ -35,4 +35,19 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="action" ref="report_shipment_out_delivery_note_return"/>
         </record>
     </data>
+    <data depends="stock_valued">
+        <record model="ir.action.report" id="report_shipment_out_delivery_valued">
+            <field name="name">Delivery Note Valued</field>
+            <field name="model">stock.shipment.out</field>
+            <field name="report_name">stock.shipment.out.delivery_note_valued</field>
+            <field name="report">stock_delivery_note_jreport/delivery_note_valued.jrxml</field>
+            <field name="extension">pdf</field>
+        </record>
+        <record model="ir.action.keyword" id="report_shipment_out_delivery_valued_keyword">
+            <field name="keyword">form_print</field>
+            <field name="model">stock.shipment.out,-1</field>
+            <field name="action" ref="report_shipment_out_delivery_valued"/>
+        </record>
+    </data>
+</tryton>
 </tryton>

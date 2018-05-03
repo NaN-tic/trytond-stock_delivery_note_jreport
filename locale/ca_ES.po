@@ -154,6 +154,55 @@ msgctxt "jasper:stock.shipment.out.delivery_note.return:"
 msgid "Source document"
 msgstr "Document relacionat"
 
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Code"
+msgstr "Codi"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Customer Code"
+msgstr "Codi client"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Delivery Note"
+msgstr "Albarà"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Gross Price"
+msgstr "Preu brut"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Quantitat"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Adreça d'enviament"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Source document"
+msgstr "Document relacionat"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Tax"
+msgstr "Impost"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Untaxed"
+msgstr "Base"
+
 msgctxt "jasper:stock.shipment.out.picking_list:"
 msgid "Carrier"
 msgstr "Transportista"

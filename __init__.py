@@ -15,4 +15,5 @@ def register():
         shipment.DeliveryNote,
         shipment.PickingList,
         shipment.DeliveryNoteReturn,
+        shipment.DeliveryNoteValued,
         module='stock_delivery_note_jreport', type_='report')

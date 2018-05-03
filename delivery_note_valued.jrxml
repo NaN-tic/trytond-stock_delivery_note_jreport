@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="delivery_note_valued" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c91ba985-840e-4136-8813-2033d76ec71b">
+	<property name="ireport.zoom" value="1.6105100000000012"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="TRYTON_RELATIONS" value="[&apos;outgoing_moves&apos;]"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="shipment_qty_decimal" class="java.lang.Boolean"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/id]]></fieldDescription>
+	</field>
+	<field name="company-logo" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/logo-logo]]></fieldDescription>
+	</field>
+	<field name="company-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/name-name]]></fieldDescription>
+	</field>
+	<field name="company-vat_code" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/vat_code-vat_code]]></fieldDescription>
+	</field>
+	<field name="company-phone" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/phone-phone]]></fieldDescription>
+	</field>
+	<field name="company-email" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/email-email]]></fieldDescription>
+	</field>
+	<field name="company-zip" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/addresses-addresses/zip-zip]]></fieldDescription>
+	</field>
+	<field name="company-street" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/addresses-addresses/street-street]]></fieldDescription>
+	</field>
+	<field name="company-city" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/addresses-addresses/city-city]]></fieldDescription>
+	</field>
+	<field name="company-country" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/addresses-addresses/country-country/name-name]]></fieldDescription>
+	</field>
+	<field name="company-header" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/header-header]]></fieldDescription>
+	</field>
+	<field name="company-footer" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/footer-footer]]></fieldDescription>
+	</field>
+	<field name="company-currency-symbol" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/currency-currency/symbol-symbol]]></fieldDescription>
+	</field>
+	<field name="company-shipment_qty" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[/data/record/company-company/shipment_qty-shipment_qty]]></fieldDescription>
+	</field>
+	<field name="reference-reference" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
+	</field>
+	<field name="shipment-number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/number-number]]></fieldDescription>
+	</field>
+	<field name="state-state" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/state-state]]></fieldDescription>
+	</field>
+	<field name="product-code" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/code-code]]></fieldDescription>
+	</field>
+	<field name="product-rec_name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
+	</field>
+	<field name="quantity-quantity" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/quantity-quantity]]></fieldDescription>
+	</field>
+	<field name="unit_price-unit_price" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/unit_price-unit_price]]></fieldDescription>
+	</field>
+	<field name="full_name-full_name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer-customer/full_name-full_name]]></fieldDescription>
+	</field>
+	<field name="customer-lang" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer-customer/lang-lang/code-code]]></fieldDescription>
+	</field>
+	<field name="customer-code" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer-customer/code-code]]></fieldDescription>
+	</field>
+	<field name="full_address_lang-full_address_lang" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer-customer/addresses-addresses/full_address_lang-full_address_lang]]></fieldDescription>
+	</field>
+	<field name="full_address_lang-full_address_lang2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/full_address_lang-full_address_lang]]></fieldDescription>
+	</field>
+	<field name="effective_date-effective_date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/effective_date-effective_date]]></fieldDescription>
+	</field>
+	<field name="origin-origin" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/origin-origin]]></fieldDescription>
+	</field>
+	<field name="origins-origins" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/origins-origins]]></fieldDescription>
+	</field>
+	<field name="origin_info-origin_info" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/origin_info-origin_info]]></fieldDescription>
+	</field>
+	<field name="untaxed_amount_func-untaxed_amount_func" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/untaxed_amount_func-untaxed_amount_func]]></fieldDescription>
+	</field>
+	<field name="untaxed_amount-untaxed_amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/untaxed_amount-untaxed_amount]]></fieldDescription>
+	</field>
+	<field name="total_amount_func-total_amount_func" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/total_amount_func-total_amount_func]]></fieldDescription>
+	</field>
+	<field name="total_amount-total_amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/total_amount-total_amount]]></fieldDescription>
+	</field>
+	<field name="tax_amount_func-tax_amount_func" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/tax_amount_func-tax_amount_func]]></fieldDescription>
+	</field>
+	<field name="tax_amount-tax_amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/tax_amount-tax_amount]]></fieldDescription>
+	</field>
+	<field name="comment-comment" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/comment-comment]]></fieldDescription>
+	</field>
+	<field name="customer-comment_shipment" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/customer-customer/comment_shipment-comment_shipment]]></fieldDescription>
+	</field>
+	<field name="delivery_address-comment_shipment" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
+	</field>
+	<field name="move-total_amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/total_amount-total_amount]]></fieldDescription>
+	</field>
+	<field name="move-unit_price" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/unit_price-unit_price]]></fieldDescription>
+	</field>
+	<field name="move-untaxed_amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/untaxed_amount-untaxed_amount]]></fieldDescription>
+	</field>
+	<variable name="L" class="java.util.Locale">
+		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></initialValueExpression>
+	</variable>
+	<group name="Shipment" isStartNewPage="true" isResetPageNumber="true">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+		<groupHeader>
+			<band height="154">
+				<textField>
+					<reportElement x="264" y="5" width="274" height="15" uuid="b87b55b9-dbc4-40aa-b21b-90b78befbc70"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="66" y="138" width="148" height="12" uuid="d4ea5653-f41c-422f-acc1-ceada0793612"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Description")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="13" y="138" width="50" height="12" uuid="7d0f7e2b-3332-4f27-be98-a62091577018"/>
+					<textElement textAlignment="Left">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Quantity")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="264" y="20" width="274" height="51" uuid="ce10b800-6b75-41b7-aaaa-af53c94e0845"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{full_address_lang-full_address_lang}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="264" y="71" width="274" height="1" uuid="37b86773-1092-4304-9885-d5fc8956c9be"/>
+				</line>
+				<textField>
+					<reportElement x="264" y="87" width="274" height="46" uuid="7bbd2132-a12a-4262-93e0-cd4a042e356c"/>
+					<textElement>
+						<font size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{full_address_lang-full_address_lang2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="4" width="250" height="15" forecolor="#010101" uuid="322d34d8-b653-4849-8e5d-dcbc1321027b">
+						<printWhenExpression><![CDATA[$F{shipment-number} != '']]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Delivery Note")+" Nº "+$F{shipment-number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="21" width="250" height="12" uuid="123f8409-a763-484f-ad0b-65f6d67b822b">
+						<printWhenExpression><![CDATA[$F{effective_date-effective_date} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Date")+": "+new SimpleDateFormat("dd'-'MM'-'yyyy").format($F{effective_date-effective_date})]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="151" width="530" height="1" uuid="a23abe75-6da8-4f3c-868a-0981110f0389"/>
+				</line>
+				<textField>
+					<reportElement x="264" y="75" width="274" height="15" uuid="e5680fd6-8b26-44cc-bc57-88fac863aa17"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Shipment Address")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="34" width="250" height="12" uuid="0307a30c-4131-4421-8c58-df93a2479ea0">
+						<printWhenExpression><![CDATA[$F{origins-origins}!= '']]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="46" width="250" height="12" uuid="40160dc5-1170-46bb-9d13-35af190bd762">
+						<printWhenExpression><![CDATA[$F{customer-code}!= '']]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Customer Code")+": "+$F{customer-code}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="492" y="138" width="48" height="12" uuid="1b685b4f-7984-4415-bdc7-2c9e9e54d876"/>
+					<textElement textAlignment="Right">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Total")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="416" y="138" width="72" height="12" uuid="72715637-b8ad-46a1-a1a9-c89fde4cbd27"/>
+					<textElement textAlignment="Left">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Gross Price")]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="62" splitType="Prevent">
+				<line>
+					<reportElement x="10" y="1" width="530" height="1" uuid="047350d2-2791-4bca-91d0-7045151f997a"/>
+				</line>
+				<textField>
+					<reportElement x="390" y="44" width="55" height="12" uuid="de625341-98c6-4f92-a08b-62bf1fcf380c"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Total")+":"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="527" y="26" width="19" height="12" uuid="1d358001-7df6-48e5-a22e-7a009687617f"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="527" y="44" width="19" height="12" uuid="6ea736ce-8741-4dba-b930-cd489ea03667"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="527" y="12" width="19" height="12" uuid="a160af30-e81c-4566-9a7a-029429eafcba"/>
+					<textElement>
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="390" y="40" width="150" height="1" uuid="8a6152e0-8fc2-4a70-9e3e-d8dceeb8c47a"/>
+				</line>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="false">
+					<reportElement x="445" y="12" width="80" height="12" uuid="ebc66293-02ff-4a2a-be59-8d8cf87486e5"/>
+					<textElement textAlignment="Right">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{untaxed_amount-untaxed_amount} ? $F{untaxed_amount-untaxed_amount} : ($F{untaxed_amount_func-untaxed_amount_func} ? $F{untaxed_amount_func-untaxed_amount_func} : '0')]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="false">
+					<reportElement x="445" y="26" width="80" height="12" uuid="66414bc4-36ae-472e-8ec6-aeda64bf04b7"/>
+					<textElement textAlignment="Right">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tax_amount-tax_amount} ? $F{tax_amount-tax_amount} : ($F{tax_amount_func-tax_amount_func} ? $F{tax_amount_func-tax_amount_func} : '0')]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="390" y="26" width="55" height="12" uuid="4bf4d17d-3d71-4f2b-a8ba-b2edb20048c9"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Tax")+":"]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="false">
+					<reportElement x="445" y="44" width="80" height="12" uuid="852fd0bd-e0ee-4daa-ac62-4fcd74e62d52"/>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total_amount-total_amount} ? $F{total_amount-total_amount} : ($F{total_amount_func-total_amount_func} ? $F{total_amount_func-total_amount_func} : '0')]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="390" y="12" width="55" height="12" uuid="4f4e9de8-ee37-40c9-b4dd-54c05521252f"/>
+					<textElement>
+						<font size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[tr($V{L},"Untaxed")+":"]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="390" y="8" width="150" height="1" uuid="7ff657f6-10c3-49bf-9e14-71ab814c30cb"/>
+				</line>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="10" y="9" width="360" height="47" isRemoveLineWhenBlank="true" uuid="7dc52fe8-c69b-45bf-a757-ec85a69c3eb7"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{comment-comment} ? $F{comment-comment}+"\n" : '') + ($F{customer-comment_shipment} ? $F{customer-comment_shipment}+"\n" : '') + ($F{delivery_address-comment_shipment} ? $F{delivery_address-comment_shipment}+"\n" : '')]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="81">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="68" width="528" height="10" isRemoveLineWhenBlank="true" forecolor="#808080" uuid="b4c4f3c0-a273-45bc-aac8-f891e3173b3a"/>
+				<textElement textAlignment="Left">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-header}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="10" y="6" width="280" height="60" isRemoveLineWhenBlank="true" uuid="99c09572-af27-4793-a093-2bdb7b2b8184">
+					<printWhenExpression><![CDATA[$F{company-logo}.length()>0]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$F{company-logo}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="66" y="2" width="350" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="13" y="2" width="50" height="12" uuid="c0ee0786-746b-4c0d-9976-8f8b35bc1464"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity-quantity} != null && $F{quantity-quantity} != ""
+?
+    $P{shipment_qty_decimal} == true
+    ?
+        String.format("%.2f", $F{quantity-quantity})
+    :
+        String.valueOf($F{quantity-quantity}).split("\\.")[0]
+:
+    ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0000">
+				<reportElement x="416" y="2" width="72" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
+				<textFieldExpression><![CDATA[$F{move-gross_unit_price} ? $F{move-gross_unit_price} : $F{move-unit_price}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="492" y="2" width="46" height="12" uuid="e930b2c8-b2f8-4ad1-85ec-a179e847dce7"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{move-amount} ? $F{move-amount} : '0']]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="89" splitType="Stretch">
+			<rectangle>
+				<reportElement x="529" y="4" width="100" height="20" forecolor="#FEFEFE" backcolor="#A0A0A0" uuid="62880105-e0bb-4319-bdfc-3e51da0fe1ad"/>
+			</rectangle>
+			<textField>
+				<reportElement x="538" y="9" width="80" height="11" forecolor="#FCFCFC" uuid="d2afcc4d-d898-46eb-b7d5-112cd834b914"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="6" width="304" height="11" forecolor="#010101" uuid="a4243634-662a-4632-af16-247cff5f4630"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="29" width="304" height="11" forecolor="#808080" uuid="6aa2d678-2060-40ff-9b16-ccbf4736195b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-zip}+" "+$F{company-city}+" "+$F{company-country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="17" width="304" height="11" forecolor="#808080" uuid="43bb96d7-9e05-455b-a44b-46f5888e6ab1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-street}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="9" y="42" width="304" height="11" forecolor="#808080" uuid="db3d3519-1309-4863-89fa-67e673770964"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-vat_code}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="9" y="73" width="535" height="10" isRemoveLineWhenBlank="true" forecolor="#808080" uuid="2ab3736e-c838-4775-85c9-a5ea857f2d3f"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-footer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="54" width="304" height="12" forecolor="#808080" uuid="982d445d-ba23-4aa0-a297-edb6e6a83b00"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["T. "+ $F{company-phone}+" "+$F{company-email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -82,6 +82,54 @@ msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
 msgid "Source document"
 msgstr "Documento relacionado"
 
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Customer Code"
+msgstr "Código cliente"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Delivery Note"
+msgstr "Albarán"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Gross Price"
+msgstr "Precio bruto"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Dirección de envío"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Tax"
+msgstr "Impuesto"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Untaxed"
+msgstr "Base"
+
 msgctxt "jasper:stock.shipment.out.delivery_note:"
 msgid "Boxes"
 msgstr "Cajas"
