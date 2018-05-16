@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Boxes"
+msgstr "Caixas"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Carrier"
+msgstr "Transportadora"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Customer Code"
+msgstr "Numero de Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Delivery Note"
+msgstr "Nota de envio"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Description"
+msgstr "Descrição"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Shipment Address"
+msgstr "Endereço para envio"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Boxes"
+msgstr "Caixas"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Carrier"
+msgstr "Transportadora"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Customer Code"
+msgstr "Numero de Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Delivery Note Return"
+msgstr "Devolução de Pro-forma"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Description"
+msgstr "Descrição"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Shipment Address"
+msgstr "Endereço para envio"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Boxes"
+msgstr "Caixas"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Carrier"
+msgstr "Transportadora"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Customer Code"
+msgstr "Numero de Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Delivery Note"
+msgstr "Pro-forma"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Description"
+msgstr "Descrição"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Shipment Address"
+msgstr "Endereço para envio"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Source document"
+msgstr "Documento relacionado"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Carrier"
+msgstr "Transportadora"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Customer Code"
+msgstr "Numero de Cliente"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Description"
+msgstr "Descrição"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Effective Date"
+msgstr "Data efetiva"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "From"
+msgstr "De"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Picking List"
+msgstr "Lista de Recolha"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Planned Date"
+msgstr "Data de vencimento"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Qty."
+msgstr "Quant."
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Reference"
+msgstr "Referência"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Source document"
+msgstr "Origem"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "To"
+msgstr "Para"
