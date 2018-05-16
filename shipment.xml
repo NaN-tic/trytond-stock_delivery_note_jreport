@@ -10,6 +10,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="report_name">stock.shipment.out.delivery_note</field>
             <field name="report">stock_delivery_note_jreport/delivery_note.jrxml</field>
             <field name="extension">pdf</field>
+            <field name="template_extension">jrxml</field>
         </record>
 
         <!-- picking list -->
@@ -19,6 +20,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="report_name">stock.shipment.out.picking_list</field>
             <field name="report">stock_delivery_note_jreport/picking_list.jrxml</field>
             <field name="extension">pdf</field>
+            <field name="template_extension">jrxml</field>
         </record>
 
         <!-- delivery note return -->
@@ -28,6 +30,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="report_name">stock.shipment.out.delivery_note.return</field>
             <field name="report">stock_delivery_note_jreport/delivery_note_return.jrxml</field>
             <field name="extension">pdf</field>
+            <field name="template_extension">jrxml</field>
         </record>
         <record model="ir.action.keyword" id="report_shipment_out_delivery_note_return_keyword">
             <field name="keyword">form_print</field>
@@ -42,6 +45,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="report_name">stock.shipment.out.delivery_note_valued</field>
             <field name="report">stock_delivery_note_jreport/delivery_note_valued.jrxml</field>
             <field name="extension">pdf</field>
+            <field name="template_extension">jrxml</field>
         </record>
         <record model="ir.action.keyword" id="report_shipment_out_delivery_valued_keyword">
             <field name="keyword">form_print</field>

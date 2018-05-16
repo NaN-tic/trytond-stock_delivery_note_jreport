@@ -2,34 +2,34 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Carrier"
 msgstr "Messager"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Code"
 msgstr "Code"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Customer Code"
 msgstr "Code client"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Delivery Note"
 msgstr "Bon de livraison"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Description"
 msgstr "Description"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Quantity"
 msgstr "Quantité"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Document source"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Shipment Address"
 msgstr "Adresse de livraison"
