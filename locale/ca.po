@@ -42,216 +42,216 @@ msgctxt "help:stock.configuration,shipment_qty_decimal:"
 msgid "Show qty with or without decimals"
 msgstr "Mostra la Qt. amb o sense decimals"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Boxes"
 msgstr "Caixes"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Carrier"
 msgstr "Transportistes"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Code"
 msgstr "Codi"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Customer Code"
 msgstr "Codi client"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Date"
 msgstr "Data"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Delivery Note"
 msgstr "Nota d'enviament"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Shipment Address"
 msgstr "Adreça enviament"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.jreport:"
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
 msgid "Source document"
 msgstr "Document relacionat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Boxes"
 msgstr "Caixes"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Carrier"
 msgstr "Missatger"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Code"
 msgstr "Codi"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Customer Code"
 msgstr "Codi client"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Delivery Note"
 msgstr "Albarà"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Shipment Address"
 msgstr "Adreça enviament"
 
-msgctxt "jasper:stock.shipment.out.delivery_note:"
+msgctxt "report:stock.shipment.out.delivery_note:"
 msgid "Source document"
 msgstr "Document relacionat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Boxes"
 msgstr "Caixes"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Carrier"
 msgstr "Missatger"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Code"
 msgstr "Codi"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Customer Code"
 msgstr "Codi client"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Delivery Note Return"
 msgstr "Albarà devolució"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Shipment Address"
 msgstr "Adreça enviament"
 
-msgctxt "jasper:stock.shipment.out.delivery_note.return:"
+msgctxt "report:stock.shipment.out.delivery_note.return:"
 msgid "Source document"
 msgstr "Document relacionat"
 
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Code"
 msgstr "Codi"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Customer Code"
 msgstr "Codi client"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Date"
 msgstr "Data"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Delivery Note"
 msgstr "Albarà"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Gross Price"
 msgstr "Preu brut"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Shipment Address"
 msgstr "Adreça d'enviament"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Source document"
 msgstr "Document relacionat"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Tax"
 msgstr "Impost"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Total"
 msgstr "Total"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
 msgid "Untaxed"
 msgstr "Base"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Carrier"
 msgstr "Transportista"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Customer Code"
 msgstr "Codi client"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Date"
 msgstr "Data"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Effective Date"
 msgstr "Data efectiva"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "From"
 msgstr "Des de"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Picking List"
 msgstr "Llista recollida"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Planned Date"
 msgstr "Data estimada"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Qty."
 msgstr "Quant."
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Reference"
 msgstr "Referencia"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "Source document"
 msgstr "Origen"
 
-msgctxt "jasper:stock.shipment.out.picking_list:"
+msgctxt "report:stock.shipment.out.picking_list:"
 msgid "To"
 msgstr "A"
 
