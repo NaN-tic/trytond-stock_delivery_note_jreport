@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Boxes"
+msgstr "Scatola"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Carrier"
+msgstr "Corriere"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Code"
+msgstr "Codice"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Customer Code"
+msgstr "Codice Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Delivery Note"
+msgstr "Nota di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Description"
+msgstr "Descrizione"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Quantity"
+msgstr "Quantità"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Shipment Address"
+msgstr "Indirizzo di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Source document"
+msgstr "Documento di Origine"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Boxes"
+msgstr "Scatola"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Carrier"
+msgstr "Corriere"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Code"
+msgstr "Codice"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Customer Code"
+msgstr "Codice Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Delivery Note Return"
+msgstr "Nota di Restituzione"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Description"
+msgstr "Descrizione"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Quantity"
+msgstr "Quantità"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Shipment Address"
+msgstr "Indirizzo di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Source document"
+msgstr "Documento di Origine"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Boxes"
+msgstr "Scatola"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Carrier"
+msgstr "Corriere"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Code"
+msgstr "Codice"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Customer Code"
+msgstr "Codice Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Delivery Note"
+msgstr "Nota di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Description"
+msgstr "Descrizione"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Quantity"
+msgstr "Quantità"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Shipment Address"
+msgstr "Indirizzo di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Source document"
+msgstr "Documento di Origine"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Carrier"
+msgstr "Corriere"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Customer Code"
+msgstr "Codice Cliente"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Description"
+msgstr "Descrizione"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Effective Date"
+msgstr "Data Effettiva"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "From"
+msgstr "Da"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Picking List"
+msgstr "Lista"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Planned Date"
+msgstr "Data Stimata"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Qty."
+msgstr "Qtà."
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Quantity"
+msgstr "Quantità"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Reference"
+msgstr "Referenza"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Source document"
+msgstr "Origine"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "To"
+msgstr "A"

@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Boxes"
+msgstr "Ilość paczek"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Carrier"
+msgstr "Przewoźnik"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Code"
+msgstr "Kod"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Customer Code"
+msgstr "Kod klienta"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Delivery Note"
+msgstr "Dowód dostawy"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Description"
+msgstr "Opis"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Quantity"
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Shipment Address"
+msgstr "Adres wysyłki"
+
+msgctxt "report:stock.shipment.out.delivery_note.jreport:"
+msgid "Source document"
+msgstr "Źródło"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Boxes"
+msgstr "Ilość paczek"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Carrier"
+msgstr "Przewoźnik"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Code"
+msgstr "Kod"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Customer Code"
+msgstr "Kod klienta"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Delivery Note Return"
+msgstr "Potw. zwrotu"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Description"
+msgstr "Opis"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Quantity"
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Shipment Address"
+msgstr "Adres wysyłki"
+
+msgctxt "report:stock.shipment.out.delivery_note.return:"
+msgid "Source document"
+msgstr "Źródło"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Boxes"
+msgstr "Ilość paczek"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Carrier"
+msgstr "Przewoźnik"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Code"
+msgstr "Kod"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Customer Code"
+msgstr "Kod klienta"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Delivery Note"
+msgstr "Dowód dostawy"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Description"
+msgstr "Opis"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Quantity"
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Shipment Address"
+msgstr "Adres wysyłki"
+
+msgctxt "report:stock.shipment.out.delivery_note:"
+msgid "Source document"
+msgstr "Źródło"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Carrier"
+msgstr "Przewoźnik"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Customer Code"
+msgstr "Kod klienta"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Description"
+msgstr "Opis"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Effective Date"
+msgstr "Data realizacji"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "From"
+msgstr "Od"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Picking List"
+msgstr "Zrealizowane wysyłki"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Planned Date"
+msgstr "Przewidywany czas"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Qty."
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Quantity"
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Reference"
+msgstr "Oznaczenie"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "Source document"
+msgstr "Źródło"
+
+msgctxt "report:stock.shipment.out.picking_list:"
+msgid "To"
+msgstr "Do"
