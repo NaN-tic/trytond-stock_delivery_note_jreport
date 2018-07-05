@@ -20,6 +20,9 @@
 	<field name="company-name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/party-party/name-name]]></fieldDescription>
 	</field>
+	<field name="company-lang" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/lang-lang/code-code]]></fieldDescription>
+	</field>
 	<field name="company-vat_code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/party-party/vat_code-vat_code]]></fieldDescription>
 	</field>
@@ -261,7 +264,7 @@ $F{delivery_full_address}.replaceAll("&","&amp;")]]></textFieldExpression>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{product-rec_name}.get($F{customer-lang})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{customer-lang} && $F{product-rec_name}.$F{customer-lang} ? $F{product-rec_name}.$F{customer-lang} : $F{product-rec_name}.$F{company-lang})]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
 				<reportElement x="497" y="2" width="40" height="12" uuid="3ddc68ba-455c-4df0-b3e8-22ecdcf9467e"/>
