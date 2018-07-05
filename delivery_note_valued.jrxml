@@ -65,7 +65,7 @@
 	<field name="product-code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/code-code]]></fieldDescription>
 	</field>
-	<field name="product-rec_name" class="java.lang.String">
+	<field name="product-rec_name" class="java.lang.Object">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
 	<field name="quantity-quantity" class="java.lang.Double">
@@ -128,14 +128,8 @@
 	<field name="delivery_address-comment_shipment" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
 	</field>
-	<field name="move-total_amount" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/total_amount-total_amount]]></fieldDescription>
-	</field>
-	<field name="move-unit_price" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/unit_price-unit_price]]></fieldDescription>
-	</field>
-	<field name="move-untaxed_amount" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/untaxed_amount-untaxed_amount]]></fieldDescription>
+	<field name="move-amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/amount-amount]]></fieldDescription>
 	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
@@ -235,13 +229,6 @@
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Total")]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="416" y="138" width="72" height="12" uuid="72715637-b8ad-46a1-a1a9-c89fde4cbd27"/>
-					<textElement textAlignment="Left">
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Gross Price")]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -349,11 +336,11 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="66" y="2" width="350" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
+				<reportElement x="66" y="2" width="415" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{product-rec_name}.get($F{customer-lang})]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
 				<reportElement x="13" y="2" width="50" height="12" uuid="c0ee0786-746b-4c0d-9976-8f8b35bc1464"/>
@@ -369,10 +356,6 @@
         String.valueOf($F{quantity-quantity}).split("\\.")[0]
 :
     ""]]></textFieldExpression>
-			</textField>
-			<textField pattern="###0.0000">
-				<reportElement x="416" y="2" width="72" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
-				<textFieldExpression><![CDATA[$F{move-gross_unit_price} ? $F{move-gross_unit_price} : $F{move-unit_price}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00;-#,##0.00">
 				<reportElement x="492" y="2" width="46" height="12" uuid="e930b2c8-b2f8-4ad1-85ec-a179e847dce7"/>
