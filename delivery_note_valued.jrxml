@@ -20,6 +20,9 @@
 	<field name="company-name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/party-party/name-name]]></fieldDescription>
 	</field>
+	<field name="company-lang" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/party-party/lang-lang/code-code]]></fieldDescription>
+	</field>
 	<field name="company-vat_code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/company-company/party-party/vat_code-vat_code]]></fieldDescription>
 	</field>
@@ -334,7 +337,7 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="15" splitType="Stretch">
+		<band height="14" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
 				<reportElement x="66" y="2" width="415" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
 				<textElement>
