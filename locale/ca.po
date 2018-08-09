@@ -263,6 +263,10 @@ msgctxt "model:ir.action,name:report_shipment_out_delivery_note_return"
 msgid "Delivery Note Return"
 msgstr "Nota d'enviament devolució"
 
+msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
+msgid "Delivery Note Valued"
+msgstr "Nota d'enviament valorada"
+
 msgctxt "model:ir.action,name:report_shipment_out_picking_list"
 msgid "Picking List"
 msgstr "Llista recollida"
