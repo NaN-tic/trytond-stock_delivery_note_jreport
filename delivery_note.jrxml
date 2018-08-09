@@ -245,6 +245,7 @@
 	</pageHeader>
 	<detail>
 		<band height="15" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{quantity-quantity} != 0]]></printWhenExpression>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="13" y="2" width="394" height="12" uuid="b9bc8323-247a-4aa8-8a00-14a73875a1dc"/>
 				<textElement>
