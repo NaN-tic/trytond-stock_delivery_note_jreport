@@ -134,6 +134,9 @@
 	<field name="move-amount" class="java.lang.Number">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/amount-amount]]></fieldDescription>
 	</field>
+	<field name="currency-symbol" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/currency/symbol]]></fieldDescription>
+	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
 		<initialValueExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></initialValueExpression>
@@ -252,21 +255,33 @@
 					<textElement>
 						<font size="9" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{currency-symbol} != null && $F{currency-symbol} != ""
+?
+    $F{currency-symbol}
+:
+    $F{company-currency-symbol}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="527" y="44" width="19" height="12" uuid="6ea736ce-8741-4dba-b930-cd489ea03667"/>
 					<textElement>
 						<font size="9" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{currency-symbol} != null && $F{currency-symbol} != ""
+?
+    $F{currency-symbol}
+:
+    $F{company-currency-symbol}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="527" y="12" width="19" height="12" uuid="a160af30-e81c-4566-9a7a-029429eafcba"/>
 					<textElement>
 						<font size="9" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{company-currency-symbol}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{currency-symbol} != null && $F{currency-symbol} != ""
+?
+    $F{currency-symbol}
+:
+    $F{company-currency-symbol}]]></textFieldExpression>
 				</textField>
 				<line>
 					<reportElement x="390" y="40" width="150" height="1" uuid="8a6152e0-8fc2-4a70-9e3e-d8dceeb8c47a"/>
