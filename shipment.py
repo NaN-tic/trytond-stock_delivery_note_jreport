@@ -9,8 +9,7 @@ __all__ = ['DeliveryNote', 'PickingList', 'DeliveryNoteReturn',
     'DeliveryNoteValued']
 
 
-class DeliveryNote(JasperReport):
-    __metaclass__ = PoolMeta
+class DeliveryNote(JasperReport, metaclass=PoolMeta):
     __name__ = 'stock.shipment.out.delivery_note'
 
     @classmethod
@@ -29,8 +28,7 @@ class DeliveryNote(JasperReport):
         return super(DeliveryNote, cls).execute(ids, data)
 
 
-class PickingList(JasperReport):
-    __metaclass__ = PoolMeta
+class PickingList(JasperReport, metaclass=PoolMeta):
     __name__ = 'stock.shipment.out.picking_list'
 
     @classmethod
@@ -49,8 +47,7 @@ class PickingList(JasperReport):
         return super(PickingList, cls).execute(ids, data)
 
 
-class DeliveryNoteReturn(JasperReport):
-    __metaclass__ = PoolMeta
+class DeliveryNoteReturn(JasperReport, metaclass=PoolMeta):
     __name__ = 'stock.shipment.out.delivery_note.return'
 
     @classmethod

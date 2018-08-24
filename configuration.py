@@ -8,8 +8,7 @@ from trytond.modules.company.model import CompanyValueMixin
 __all_ = ['Configuration', 'StockConfigurationCompany']
 
 
-class Configuration:
-    __metaclass__ = PoolMeta
+class Configuration(metaclass=PoolMeta):
     __name__ = 'stock.configuration'
 
     shipment_qty_decimal = fields.MultiValue(fields.Boolean(
