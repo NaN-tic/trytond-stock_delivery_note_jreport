@@ -194,7 +194,7 @@
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origin_info-origin_info}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="61" width="250" height="12" uuid="28537064-cf21-4a20-b252-841661e65c77">
