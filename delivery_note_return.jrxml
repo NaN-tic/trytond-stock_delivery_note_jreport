@@ -188,7 +188,7 @@
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origin_info-origin_info}]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
