@@ -3,8 +3,11 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
-        <!-- delivery note -->
+          <!-- delivery note -->
         <record model="ir.action.report" id="stock.report_shipment_out_delivery_note">
+            <field name="active" eval="False"/>
+        </record>
+        <record model="ir.action.report" id="report_shipment_out_delivery_note">
             <field name="name">Delivery Note</field>
             <field name="model">stock.shipment.out</field>
             <field name="report_name">stock.shipment.out.delivery_note</field>
@@ -12,9 +15,19 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="extension">pdf</field>
             <field name="template_extension">jrxml</field>
         </record>
+        <record model="ir.action.keyword" id="report_shipment_out_delivery_note_keyword">
+            <field name="keyword">form_print</field>
+            <field name="model">stock.shipment.out,-1</field>
+            <field name="action" ref="report_shipment_out_delivery_note"/>
+        </record>
+
 
         <!-- picking list -->
         <record model="ir.action.report" id="stock.report_shipment_out_picking_list">
+            <field name="active" eval="False"/>
+        </record>
+
+        <record model="ir.action.report" id="report_shipment_out_picking_list">
             <field name="name">Picking List</field>
             <field name="model">stock.shipment.out</field>
             <field name="report_name">stock.shipment.out.picking_list</field>
@@ -22,6 +35,13 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="extension">pdf</field>
             <field name="template_extension">jrxml</field>
         </record>
+        <record model="ir.action.keyword" id="report_shipment_out_picking_list_keyword">
+            <field name="keyword">form_print</field>
+            <field name="model">stock.shipment.out,-1</field>
+            <field name="action" ref="report_shipment_out_picking_list"/>
+        </record>
+
+
 
         <!-- delivery note return -->
         <record model="ir.action.report" id="report_shipment_out_delivery_note_return">
